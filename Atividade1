@@ -1,0 +1,33 @@
+programa
+{
+	inclua biblioteca Calendario
+	
+	funcao inicio()
+	{
+		inteiro anos = 1
+		inteiro horas = 24
+		inteiro minutos = 60
+		inteiro idade = 15
+		inteiro chocolates 
+		inteiro idadex = 977000000
+	
+		horas = (anos * 365)* horas
+		
+		escreva ("Em um ano temos ", horas, " Horas \n")
+		minutos = (horas * 10)* 60
+		escreva ("Em uma decada temos ", minutos, " minutos \n")
+		idade = (((15 * 365) * 24) * 60) * 60 
+		escreva ("Minha idade em segundos é: ", idade, "\n")
+		chocolates = 80*12 * 2
+		escreva("Pretendo comer ", chocolates, " de chocolates \n")
+		idadex = idadex / 60 / 60 / 24 / 365 
+		escreva("Sua idade será: ", idadex)
+	
+
+	
+	
+	
+	
+	
+	}
+}
