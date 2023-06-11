@@ -1,3 +1,4 @@
+1_
 programa
 {
 	inclua biblioteca Calendario
@@ -31,3 +32,68 @@ programa
 	
 	}
 }
+2_
+	programa {
+		funcao inicio() {
+		real M = 0,2408467
+		real V = l 0,61519726
+		real J =  11,862615
+		real I
+		cadeia E
+			escreva("Minha idade em mercurio será: " 977000000 / M )
+			escreva("/n Qual a sua idade? ")
+			leia(I)
+			escreva("Escolha um planeta entre Júpiter e Vênus /n(J para Júpier e V para Vênus) ")
+			leia(E)
+			se ( E = J){escreva("Sua idade será: " I / J)}
+			senao se ( E = V){escreva("Sua idade será: "I / V)}
+			senao{escreva("Não encontrei está resposta")}
+			
+		
+	}
+}
+3_
+programa {
+	funcao inicio() {
+	inteiro D = 6
+	inteiro H = 100
+	    
+	escreva("Guilherme terá " H / D " minutos para cada matéria e "H % D " minutos para descansar")
+	}
+}
+4_
+programa {
+	funcao inicio() {
+	inteiro TB
+	
+	escreva("Escoha o tamanho da madeira: ")
+	leia(TB)
+	escreva(TB = TB * 100"Resultará em " TB / 45 " pedaços, e sobrará "TB % 45 " centimetros" )}
+}
+5_
+programa {
+	funcao inicio() {
+	inteiro X
+	inteiro L1
+	inteiro L2
+	
+	escreva("O eletricista necesitará " X = X*X == 11,5 * 11,5 + 6,3 * 6,3" metros de fios")
+	escreva("Lado 1 ")
+	leia(L1)
+	escreva("Lado 2 ")
+	leia(L2)
+	escreva("O eletricista necesitará " X = X*X == L1 * L1 + L2 * L2" metros de fios")
+	}
+}
+6_
+programa {
+	funcao inicio() {
+ 
+    inteiro X
+    real R
+	escreva("Em um ano temos 52,1786 semanas (não temos um número fechado de semanas) multiplicando por 6 resultará no numero de dias que nosso amigo pode ler: "X = 52,1786 * 6)
+	escreva("Multiplicando por 5 descobrimos os minutos que ele irá lerem um ano: "X = X * 5)
+	escreva("Dividindo por 60 teremos em horas o resultado: " R = X R = R / 60 *)
+	}
+}
+
