@@ -97,3 +97,50 @@ programa {
 	}
 }
 
+7_
+// essa demorou mt pq tive que aprender o codigo enquanto e tb tentei aprender o para(achei mt dificil e desisti)
+programa {
+  funcao inicio() {
+    inteiro I
+    inteiro R = 0
+    escreva("Qual a sua idade? ")
+    leia(I)
+    escreva("A soma de todas as suas idades é: "  )
+  enquanto(I != 0){
+    R = R + I
+    I = I - 1 
+  }
+  escreva (R)
+  }
+}
+8_
+programa {
+  funcao inicio() {
+    inteiro A
+    inteiro DMB
+    real T
+    escreva("Qual a sua taxa de megabites por segundo (Mbps) ")
+    leia(DMB)
+    escreva("Qual o tamanho do seu arquivo?(Em Mb) "  )
+    leia(A)
+    T = A / DMB
+    T = T / 60
+    escreva("Irá demorar " T " minutos")
+
+  }
+}
+9_
+programa {
+  funcao inicio() {
+    real Tamanho
+    inteiro L
+    real P
+    escreva("Qual o tamanho a ser pintado (metro quadrado) ")
+    leia(Tamanho)
+    L = Tamanho / (18 * 3)
+    P = L * 480
+    escreva("Irá necessitar de " L " latas e gastará: " P)
+
+  }
+}
+
