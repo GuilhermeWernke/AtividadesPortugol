@@ -1,6 +1,137 @@
+1_
+programa {
+  funcao inicio() {
+    real Tamanho
+    inteiro L
+    real P
+    escreva("Qual o tamanho a ser pintado (metro quadrado) ")
+    leia(Tamanho)
+    L = Tamanho / (18 * 3)
+    P = L * 480
+    escreva("Irá necessitar de " L " latas e gastará: " P)
+
+  }
+}
+
+2_
+programa {
+  inclua biblioteca Matematica
+  funcao inicio() {
+    
+    real a = 0
+    real b = 0
+    real c = 0
+    real delta = 0
+    real x = 0
+    real y = 0
+
+    escreva("Qual o valor de A? ")
+    leia(a)
+    escreva("Qual o valor de B? ")
+    leia(b)
+    escreva("Qual o valor de C? ")
+    leia(c)
+    delta = b*b-4*a*c
+    escreva("Delta equivale á: ", delta)
+    delta = Matematica.raiz(delta)
+    x = (b*-1 + delta)/2*a
+    escreva("X1 equivale á: ", x )
+    y = (b*-1 - delta)/2*a
+    escreva("X2 equivale á: ", y)
+
+  }
+}
+
+3_
+
+4_
+programa {
+  inclua biblioteca Matematica
+  funcao inicio() {
+    
+    real a = 0
+    real b = 0
+    real c = 0
 
 
+    escreva("Qual o tempo que você vai ficar com o carro? ")
+    leia(a)
+    escreva("Quantos KM você rodou com o carro? ")
+    leia(b)
+    c = b * 60 + a * 0.15
 
+    escreva("O preço a pagar equivale á: ", c)
+  }
+}
+
+5_
+Verdadeiro
+Falso
+Verdadeiro
+Verdadeiro
+Verdadeiro
+Falso
+Verdadeiro
+
+6_
+programa {
+  inclua biblioteca Matematica
+  funcao inicio() {
+    
+    real a = 0
+    real b = 0
+    real c = 0
+
+
+    escreva("Informe um número ")
+    leia(a)
+    escreva("Informe outro número ")
+    leia(b)
+    se(a>b){
+      escreva(a)
+
+    }
+    senao se(b>a){
+      escreva(b)
+
+    }
+    senao{
+      escreva("a igual a b")
+
+    }
+
+ 
+  }
+}
+
+7_
+programa {
+  inclua biblioteca Matematica
+  funcao inicio() {
+    
+    real a = 0
+    real b = 0
+    real c = 0
+
+
+    escreva("Informe uma Temperatura ")
+    leia(a)
+    se(a>0){
+      escreva("Positivo!")
+
+    }
+    senao se(0>a){
+      escreva("Negativo!!!")
+
+    }
+    senao{
+      escreva("0 Graus!!!!")
+
+    }
+  }
+}
+
+8_
 
 
 
