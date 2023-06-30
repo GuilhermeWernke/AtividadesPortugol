@@ -168,29 +168,83 @@ programa {
 
 
 8_
+programa
+{
+	
+	funcao inicio()
+	{
+	logico C
+	logico T
+	logico F
+	logico DG 
+	logico DR
+	inteiro PC = 0
+	
 
+	escreva("Caro paciente, me responda com verdadeiro e falso, ok? \nVocê tem tossido ultimamente? \n")
+	leia (T)
 
+	escreva("Esteve com febre? \n")
+	leia (F)
 
+	escreva("Nariz escorrendo? \n")
+	leia (C)
 
+	escreva("E dor de cabeça? \n")
+	leia (DG)
 
+	escreva("Esteve dificulade para respirar? \n")
+	leia (DR)
 
+	se (DG == verdadeiro)
+	{PC = PC + 25}
+	se (F == verdadeiro)
+	{PC = PC + 25}
+	se (T == verdadeiro)
+	{PC = PC + 25}
+	se (C == verdadeiro)
+	{PC = PC + 25}
+	se (DR == verdadeiro)
+	{PC = PC + 60}
 
-
-
+	se (PC >= 75)
+	{escreva("Você tem grandes chancesde etar com covid!")}
+	senao
+	{escreva("Você não aparenta estar com covid!")}
+	
+	}
+}
 
 9_
+programa{
 
 
+funcao inicio()
+{
+inteiro la,lb, lc
+escreva("Fale a primeira medidada do triângulo:")
+leia(la)
+escreva("Fale a segunda medidada do triângulo:")
+leia(lb)
+escreva("Fale a terceira medidada do triângulo:")
+leia(lc)
 
-
-
-
-
-
-
-
-
-
+   se((la+lc)>lb e (lb+lc)>la e (lb+la)>lc){
+    se(la==lb e la==lc e lb==lc){
+    escreva("Esse triângulo é equilátero")
+    }
+    senao se(la !=lb e lb !=lc e la !=lc){
+    escreva("Esse triângulo é escaleno")
+    }
+    senao{
+    escreva("Esse triângulo isósceles")
+    }
+       }
+   senao{
+    escreva("Isso não é um triângulo")
+       }
+   }
+}
 
 10_
 programa {
@@ -307,16 +361,36 @@ programa {
 }
 
 14_
+programa {
 
-
-
-
-
-
-
-
-
-
+  funcao inicio() {
+   
+    real N, M, med
+ 
+    escreva("Informe a primeira nota: ")
+    leia(N)
+    escreva("Informe a segunda nota: ")
+    leia(M)
+ 
+   
+    med = (N + M) / 2
+    escreva("A média obtida pelo aluno foi: ", med)
+ 
+ 
+    se (med < 7.0) {
+      escreva("\nReprovado")
+    }
+    senao se (med >= 7.0) {
+    se (med==10.0){
+        escreva("\nAprovado com Distinção")
+      }
+      senao{
+        escreva("\nAprovado")
+      }
+     
+    }      
+  }
+}
 
 15_
 programa
