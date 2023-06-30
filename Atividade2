@@ -43,15 +43,41 @@ programa {
 }
 
 3_
+programa {
+  inclua biblioteca Calendario
 
 
 
 
 
+  
+  funcao inicio() {
+    
+   inteiro ano, mes, dia, ano_atual,mes_atual, dia_atual, x = 0, y = 0, z
+   // meu p ão termina de rodar o programa, não sei pq, 
 
-
-
-
+    escreva("Informe o ano que você naceu (Formato 2000): ")
+    leia(ano) 
+    escreva("Informe o mês que você naceu (Formato 10): ")
+    leia(mes)
+    escreva("Informe o dia que você naceu (Formato 09): ")
+    leia(dia)
+    
+    ano_atual = Calendario.ano_atual()
+    ano = ano_atual-ano
+    mes_atual = ano * 12
+    faca{
+    		y++
+    	} enquanto(y!=mes_atual)
+    	mes_atual = mes_atual - y
+    	dia_atual = mes_atual*30
+    	faca{
+    		x++
+    	} enquanto(x!=dia_atual)
+    	dia_atual = dia_atual * 24 * 60 * 60 
+    	escreva("Seus segundos são: ", dia_atual)
+  }
+}
 
 4_
 programa {
@@ -230,14 +256,33 @@ programa {
 }
 
 12_
+programa {
 
-
-
-
-
-
-
-
+  funcao inicio() {
+    
+   inteiro ano
+   
+    escreva("Informe um anoqualquer: ")
+    leia(ano)
+    se(ano%4 ==0){
+    		 se(ano%100 ==0){
+    	 		 se(ano%400 ==0){
+    	 		 	escreva("Seu ano é bissesto ")
+    			}
+    			senao{
+    		escreva("Seu ano não é bissesto ")
+    		}
+    		  }
+    		  senao{
+    		escreva("Seu ano não é bissesto ")
+    		}
+    	}
+    	senao{
+    		escreva("Seu ano não é bissesto ")
+    		} 
+  //não sei o que eu errei, segui álógica que o senhor informou
+  }
+}
 
 
 13_
