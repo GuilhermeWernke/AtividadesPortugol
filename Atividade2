@@ -44,6 +44,15 @@ programa {
 
 3_
 
+
+
+
+
+
+
+
+
+
 4_
 programa {
   inclua biblioteca Matematica
@@ -131,7 +140,136 @@ programa {
   }
 }
 
+
 8_
+
+
+
+
+
+
+
+
+
+
+9_
+
+
+
+
+
+
+
+
+
+
+
+
+
+10_
+programa {
+  inclua biblioteca Texto
+  funcao inicio() {
+    
+    cadeia letra
+    cadeia letra_pronta
+    
+
+    escreva("Informe uma letra ")
+    leia(letra) 
+    cadeia letra_pronta = Texto cadeia caixa_baixa(cadeia letra)
+// não sei o que estou errando, mil desculpas, mas tentei de tudo
+    se(cadeia letra_pronta=="a" ou cadeia letra_pronta=="e" ou cadeia letra_pronta=="i" ou cadeia letra_pronta=="o" ou cadeia letra_pronta=="u"){
+      escreva("Vogal!")
+    }
+    senao{
+      escreva("Consoate!!!!")
+
+    }
+  }
+}
+
+11_
+programa {
+  inclua biblioteca Texto
+  funcao inicio() {
+    
+   inteiro a,b,c
+
+    escreva("Informe um número ")
+    leia(a) 
+    escreva("Informe um segundo número ")
+    leia(b)
+    escreva("Informe um terceiro número ")
+    leia(c)
+    se(a>b e a>b){
+      se(c>b){
+      	escreva(a, c, b)
+ 		}
+  	 senao{
+  	 	escreva(a, b, c)
+  	 	}
+    }
+	senao se(b>a e b>c){
+		se(a>c){
+     		escreva(b, a, c )
+		       }
+		senao{
+			escreva(b, c, a)
+			}
+    }
+     senao{
+     	se(a>b){
+     		escreva(c, a, b)
+     	}
+     	senao{
+     		escreva(c, b, a)
+     	}
+   		}
+  }
+}
+
+12_
+
+
+
+
+
+
+
+
+
+
+13_
+programa {
+  inclua biblioteca Texto
+  funcao inicio() {
+    
+   inteiro a, b
+
+    escreva("Informe uma velocidade: ")
+    leia(a) 
+    
+    se(a<=88){
+    	//radares tem tolerancias de 10% SE NÃO ME ENGANO, adicionei por achar legal
+    		escreva("Velocidade na média ")
+    }
+	senao{
+		b = (a-88)*7
+		escreva("ACIMA DA VELOCIDADE!!!!!!!!!!! \nValor da multa será de: ", b)
+   		}
+  }
+}
+
+14_
+
+
+
+
+
+
+
+
 
 
 
